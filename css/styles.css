@@ -7,7 +7,7 @@
   --color-white: #fff;
   --color-milk-white: #FBFCFE;
   --main-font: "Public Sans", "Arial", sans-serif;
-  --color-dark:"DM Serif Display", "Times New Roman", serif;
+  --secondary-font:"DM Serif Display", "Times New Roman", serif;
   --border-radius: 24px;
 
 
@@ -94,6 +94,7 @@ img {
   transition: background-color 0.3s ease, opacity 0.3s ease, color 0.3s ease;
   color: var(--color-milk-white);
   text-decoration: none;
+  border: none;
 }
 
 .btn--block{
@@ -146,13 +147,17 @@ img {
 
 .top{
   background-color: #EDF3F8;
-
+  background-image: url("../img/top-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50%) calc(50% - 300px);
+  background-size: contain;
 }
 
 /* SITE-HEADER */
 
 .site-header {
   position: relative;
+  z-index: 1;
   padding-top: 40px;
   padding-bottom: 48px;
 }
@@ -228,7 +233,7 @@ img {
   top: 0;
   right: 0;
   display: block;
-  background-color: var(--color-dark-blue);
+  background-color: rgba(27, 38, 47, 1);
   width: 80%;
   height: 100vh;
 }
@@ -277,3 +282,84 @@ img {
 }
 
 .plan-demo {}
+
+
+/* HERO  */
+
+.hero {
+  padding-bottom: 80px;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__img {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.hero__heading {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  color: var(--color-juan-blue);
+}
+
+.hero-form {
+  width: 100%;
+}
+
+
+.hero-form__inputs {
+
+}
+
+.hero-form__input-box {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.hero-form__input-field {
+  border: none;
+  width: 100%;
+  padding: 15px 27px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color:var(--color-juan-blue);
+  opacity: 0.5;
+  border-radius: var(--border-radius);
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  background-color: var(--color-milk-white);
+
+}
+
+.hero-form__button{
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.hero-form__link-box {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: var(--color-light-blue);
+}
+
+.hero-form__link {
+  text-decoration: none;
+  color: var(--color-juan-blue);
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6C8294;
+
+}
