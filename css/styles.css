@@ -1,5 +1,47 @@
 :root {
+  --color-dark-pink: #ba4270;
+  --color-light-pink: #da6d97;
+  --color-juan-blue: #36536b;
+  --color-dark-blue: #1b262f;
+  --color-light-blue: #6c8294;
+  --color-white: #fff;
+  --color-milk-white: #FBFCFE;
+  --main-font: "Public Sans", "Arial", sans-serif;
+  --color-dark:"DM Serif Display", "Times New Roman", serif;
+  --border-radius: 24px;
+
+
 }
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('PublicSans-Bold.woff2') format('woff2'),
+    url('PublicSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('DMSerifDisplay-Regular.woff2') format('woff2'),
+    url('DMSerifDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('PublicSans-Regular.woff2') format('woff2'),
+    url('PublicSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* GENERAL */
 html {
@@ -20,8 +62,8 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  background-color: #fff;
+  font-family: var(--main-font);
+  background-color: var(--color-white);
 }
 
 img {
@@ -40,12 +82,198 @@ img {
   overflow: hidden;
 }
 
+/* REUSBALE STYLE */
+.btn{
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  transition: background-color 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+  color: var(--color-milk-white);
+  text-decoration: none;
+}
+
+.btn--block{
+  display: block;
+}
+.btn--primary{
+  background-color: var(--color-dark-pink);
+
+}
+
+.btn--primary:hover{
+  background-color: var(--color-light-pink);
+}
+
+.btn--primary:active{
+  opacity: 0.6;
+}
+
+.btn--light{
+  border: 1px solid var(--color-milk-white);
+  background-color: var(--color-dark-blue);
+
+}
+
+.btn--light:hover{
+  background-color: var(--color-milk-white);
+  color: var(--color-dark-blue);
+}
+
+.btn--light:active{
+  opacity: 0.6;
+}
+
+.btn:disabled{
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
 
 /* CONTAINER */
 .container {
-  max-width: 900px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
+/* TOP */
+
+.top{
+  background-color: #EDF3F8;
+
+}
+
+/* SITE-HEADER */
+
+.site-header {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.container {
+  padding: 0 24px;
+}
+
+.site-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active{
+  opacity: 0.6;
+}
+
+
+.logo__img {
+  display: block;
+}
+
+
+
+.site-header--open .site-header__toggler-box::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(251, 252, 254, 0.24);
+}
+
+
+.site-header__toggler {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  width: 28px;
+  height: 22px;
+  background-image: url("../img/nav-burger.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  z-index: 11;
+}
+
+.site-header--open .site-header__toggler {
+  background-image: url("../img/nav-cancel.svg");
+}
+.site-header--open .site-header__toggler-box{
+  text-align: right;
+}
+
+.sitenav {
+
+  display: none;
+  text-align: center;
+}
+
+.site-header--open .site-header__sitenav {
+  padding: 48px 24px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  display: block;
+  background-color: var(--color-dark-blue);
+  width: 80%;
+  height: 100vh;
+}
+
+
+
+
+
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.site-header--open .sitenav__list{
+  padding: 43px 0;
+  margin-top: 0px;
+}
+
+.site-header--open .sitenav__list::before{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: rgba(251, 252, 254, 0.15);
+  margin-bottom: 40px;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.sitenav__link {
+  text-transform: capitalize;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: rgba(251, 252, 254, 0.7);
+}
+
+.plan-demo__box {
+}
+
+.plan-demo {}
