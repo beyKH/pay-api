@@ -1,0 +1,41 @@
+@media only screen  and (min-width: 1024px){
+  .container{
+    padding:  0 30px;
+  }
+  .top{
+    background-position: calc(50% +  450px)  calc(50% - 400px);
+  }
+
+  .site-header{
+    padding-bottom: 75px;
+  }
+
+  .hero__container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero__heading{
+    padding: 0;
+    width: 500px;
+  }
+
+  .hero__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero__heading{
+    width: 550px;
+    font-size: 72px;
+    line-height: 72px;
+  }
+
+  .hero-form{
+    padding: 0;
+  }
+}

@@ -224,6 +224,7 @@ img {
 
   display: none;
   text-align: center;
+
 }
 
 .site-header--open .site-header__sitenav {
@@ -300,6 +301,7 @@ img {
 .hero__img {
   display: block;
   margin-bottom: 24px;
+  background-color: transparent;
 }
 
 .hero__heading {

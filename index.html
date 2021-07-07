@@ -46,29 +46,35 @@
 
     <div class="hero">
       <div class="hero__container container">
-
-        <picture class="hero__picture">
-          <source srcset="img/hero-bg-tablet.png" media="(min-width: 768px)" type="image/png">
-          <img class="hero__img" src="img/hero-img.png" alt="telephone" width="159" height="300">
-        </picture>
-        <h1 class="hero__heading">Start building with our APIs for absolutely free.</h1>
-        <form class="hero-form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="hero-form__inputs">
-            <div class="hero-form__input-box ">
-              <input class="hero-form__input-field" type="email"
-                pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Enter email address" required>
+          <img class="hero__img"  src="img/hero-img.png" alt="telephone" width="129" height="300">
+        <div class="hero__inner">
+          <h1 class="hero__heading">Start building with our APIs for absolutely free.</h1>
+          <form class="hero-form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="hero-form__inputs">
+              <div class="hero-form__input-box ">
+                <input class="hero-form__input-field" type="email"
+                  pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Enter email address" required>
+              </div>
+              <button class="hero-form__button btn btn--primary" type="submit">Schedule a Demo</button>
             </div>
-            <button class="hero-form__button btn btn--primary" type="submit">Schedule a Demo</button>
-
-          </div>
-          <div class="hero-form__link-box">
-            Have any questions? <a class="hero-form__link" href="">Contact Us</a>
-          </div>
-        </form>
+            <div class="hero-form__link-box">
+              Have any questions? <a class="hero-form__link" href="">Contact Us</a>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 
+  <main class="site-content">
+    <section class="partners">
+      <ul class="partners__list">
+        <li class="partner__item partner">
+          <img src="img/" alt="">
+        </li>
+      </ul>
+    </section>
+  </main>
 
   <script src="js/main.js"></script>
 </body>
