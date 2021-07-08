@@ -102,11 +102,16 @@
 .hero__container {}
 
 
-.hero__picture {}
+.hero__picture {
+  width: 159px;
+  height: 300px;
+}
 
 .hero__img {
   background-color: transparent;
   margin-right: 30px;
+  width: 159px;
+  height: 300px;
 }
 
 .hero__heading {

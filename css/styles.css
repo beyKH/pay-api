@@ -297,11 +297,17 @@ img {
   align-items: center;
   text-align: center;
 }
+.hero__picture{
+  width: 128px;
+  height: 240px;
+  margin-bottom: 24px;
+}
+
 
 .hero__img {
   display: block;
-  margin-bottom: 24px;
-  background-color: transparent;
+  width: 128px;
+  height: 240px;
 }
 
 .hero__heading {

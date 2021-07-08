@@ -16,6 +16,7 @@
   }
   .top{
     background-position: calc(50% +  450px)  calc(50% - 400px);
+    z-index: 1;
   }
 
   .site-header{
@@ -42,6 +43,18 @@
     align-items: center;
   }
 
+  .hero__picture {
+    margin-right: 50px;
+    margin-bottom: 0;
+    width: 263px;
+    height: 500px;
+  }
+
+  .hero__img{
+    width: 263px;
+    height: 500px;
+  }
+
   .hero__heading{
     padding: 0;
     width: 500px;
@@ -58,15 +71,34 @@
     width: 550px;
     font-size: 72px;
     line-height: 72px;
+
   }
 
   .hero-form{
     padding: 0;
   }
 
+  .hero-form__button{
+    margin-bottom: 0;
+  }
+
   /* DESKTOP PARTNERS */
   .partners{
+    position: relative;
     padding: 100px 0;
+
+  }
+
+  .partners::before{
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: calc(50% - 600px);
+    left: calc(50% - 960px);
+    width: 780px;
+    height: 780px;
+    background-image: url("../img/partner-bg.png");
+    background-repeat: no-repeat;
   }
 
   .partenrs__container{

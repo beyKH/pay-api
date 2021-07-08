@@ -46,7 +46,13 @@
 
     <div class="hero">
       <div class="hero__container container">
+        <picture class="hero__picture">
+          <source srcset="img/hero-img-desktop.png 1x, img/hero-img-desktop@2x.png 2x" media="(min-width: 768px)"
+            type="image/png">
           <img class="hero__img"  src="img/hero-img.png" alt="telephone" width="129" height="300">
+        </picture>
+
+
         <div class="hero__inner">
           <h1 class="hero__heading">Start building with our APIs for absolutely free.</h1>
           <form class="hero-form" action="https://echo.htmlacademy.ru" method="POST">
