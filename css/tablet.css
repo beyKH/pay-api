@@ -154,7 +154,7 @@
   /* TABLET PARTNERS */
 
   .partners{
-    padding: 90px 0 ;
+    padding-top: 90px;
 
   }
 
@@ -178,6 +178,160 @@
     color: #FBFCFE;
     opacity: 0.7;
   }
+  /* LEVEL TABLET */
+
+  .level{
+    padding: 0;
+    padding-top: 100px;
+  }
+
+  .level__img-box{
+    width: 410px;
+    height: 250px;
+    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .level__img{
+    width: 100%;
+    display: block;
+    height: 100%;
+  }
+  .level__pic{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .level__heading{
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .experience {
+    padding: 100px 0;
+  }
 
 
+  /* EXPERIENCE */
+
+  .experience {
+    padding: 100px 0 ;
+
+  }
+
+  .experience__container {}
+
+  .container {}
+
+  .experience__content {
+    padding: 0 50px;
+    flex-direction: column-reverse;
+
+  }
+
+  .experience__inner {}
+
+  .experience__heading {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 24px;
+  }
+
+  .experience__info {}
+
+  .experience__img-box {
+    width: 365px;
+    height: 320px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .experience__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+  }
+
+  .experience__list {
+    padding-top: 100px;
+    flex-direction: row;
+  }
+
+  .experience__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  /* READY TABLET */
+  .ready {
+    padding-bottom: 100px;
+  }
+
+  .ready__container {}
+
+  .container {}
+
+  .ready__heading {
+    font-family: var(--secondary-font);
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 40px;
+  }
+
+  .ready-form {}
+
+  .ready-form__inputs {
+    position: relative;
+    width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ready-from__input-box {}
+
+  .ready-form__input-field {
+  }
+
+  .ready-form__button {
+    position: absolute;
+    display: inline-block;
+    display: inline-block;
+    top:0%;
+    right: 0;
+    width: auto;
+  }
+
+  .footer{
+    padding: 30px 0 ;
+  }
+
+  .footer__inner{
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__logo{
+    margin: 0;
+    margin-right: 65px;
+
+  }
+
+  .footer__list{
+    display: flex;
+    margin: 0;
+  }
+
+
+
+  .footer__item:not(:last-child){
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+
+  .sc{
+    margin-left: auto;
+  }
 }
