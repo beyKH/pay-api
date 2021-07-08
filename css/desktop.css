@@ -1,3 +1,15 @@
+:root {
+  --color-dark-pink: #ba4270;
+  --color-light-pink: #da6d97;
+  --color-juan-blue: #36536b;
+  --color-dark-blue: #1b262f;
+  --color-light-blue: #6c8294;
+  --color-white: #fff;
+  --color-milk-white: #FBFCFE;
+  --main-font: "Public Sans", "Arial", sans-serif;
+  --secondary-font: "DM Serif Display", "Times New Roman", serif;
+  --border-radius: 24px;
+}
 @media only screen  and (min-width: 1024px){
   .container{
     padding:  0 30px;
@@ -9,6 +21,19 @@
   .site-header{
     padding-bottom: 75px;
   }
+  .sitenav__link{
+  transition: color 0.3s ease;
+  }
+
+  .sitenav__link:hover {
+    color: var(--color-juan-blue);
+
+  }
+
+  .sitenav__link:active {
+    opacity: 0.6;
+  }
+
 
   .hero__container{
     display: flex;
